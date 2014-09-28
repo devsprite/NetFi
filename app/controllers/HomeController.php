@@ -35,7 +35,7 @@ class HomeController extends BaseController {
         *
         */
 
-        $fiches = Fiche::orderBy('id','asc')->paginate(15);
+        $fiches = Fiche::orderBy('id','asc')->paginate(35);
         $dateMiseJour = Fiche::select('date')->first();
 
         return View::make('home.home')->with(array(
