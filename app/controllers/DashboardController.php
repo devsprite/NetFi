@@ -41,7 +41,7 @@ class DashboardController extends BaseController{
             $colonnes[] = $key;
         }
         array_shift($colonnes); // Enleve le champs id
-        array_pop($colonnes); // enleve les champs created_at et updated_at
+        array_pop($colonnes); 	// enleve les champs created_at et updated_at
         array_pop($colonnes);
 
         // Création de la requete
