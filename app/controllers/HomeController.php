@@ -39,8 +39,8 @@ class HomeController extends BaseController {
         $dateMiseJour = Fiche::select('date')->first();
 
         return View::make('home.home')->with(array(
-            'fiches'=>$fiches,
-            'dateMiseJour'=>$dateMiseJour
+            'fiches'		=>$fiches,
+            'dateMiseJour'	=>$dateMiseJour
         ));
     }
 
